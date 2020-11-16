@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 66.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12rem;
+    background-color: #3b4f66;
+}
+a{
+    text-transform: uppercase;
+}
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    margin-right: 1.2rem;
+    padding: 1rem 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #9bd46d;
+}
+.menuNav {
+    display: flex;
+    font-size: 2rem;
+}
+.container {
+    margin-top: 6rem;
+}
+.img-landing {
+    display: flex;
+}
+.title {
+    margin: 20rem auto;
+    text-align: center;
+}
+.title-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10rem;
+    font-weight: 300;
+    color: #3b4f66;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.shortcut {
+   font-weight: 300;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1.8rem;
+   letter-spacing: 4px;
+}
+.landing-are {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text-empresa img {
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color:#3b4f66;
+    text-align: center;
+    position: static;
+    padding-bottom: 20px ;
+}
+.imagem{
+    height: 45px;
+    margin: 30px 0;
+}
+span{
+    margin-bottom: 10px;
+}
+/* Design responsivo */
+@media screen and (max-width:480px){
+    header{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 100%
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-empresa{
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+    }
+}
